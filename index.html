@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/tooplate-style.css">
     <link rel="stylesheet" href="css/custom-dark.css">
     <link rel="stylesheet" href="css/image-styles.css">
+    <link rel="stylesheet" href="css/blue-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
 <!--
 
@@ -46,11 +48,18 @@ https://www.tooplate.com/view/2115-marvel
                         <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                        <a href="#education" class="nav-link"><span data-hover="Education">Education</span></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+                        <a href="#skills" class="nav-link"><span data-hover="Skills">Skills</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link"><span data-hover="Experiences & Training">Experiences & Training</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+                    </li>
+                    
                     <li class="nav-item">
                         <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
                     </li>
@@ -89,14 +98,150 @@ https://www.tooplate.com/view/2115-marvel
                 </div>
 
                 <div class="col-lg-5 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="images\undraw\Gemini_Generated_Image_jg0i5ojg0i5ojg0i233.png" class="img-fluid" alt="Profile Image">
+                    <div class="hero-image-container">
+                        <div class="geometric-bg">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                            <div class="shape shape-3"></div>
+                            <div class="shape shape-4"></div>
+                        </div>
+                        <div class="particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        <div class="profile-image-wrapper">
+                            <div class="image-border">
+                                <img src="images\undraw\Gemini_Generated_Image_jg0i5ojg0i5ojg0i233.png" class="profile-img" alt="Profile Image">
+                            </div>
+                            <div class="tech-orbit">
+                                <div class="orbit-icon orbit-1"><i class="fab fa-aws"></i></div>
+                                <div class="orbit-icon orbit-2"><i class="fab fa-docker"></i></div>
+                                <div class="orbit-icon orbit-3"><i class="fab fa-python"></i></div>
+                                <div class="orbit-icon orbit-4"><i class="uil uil-server"></i></div>
+                                <div class="orbit-icon orbit-5"><i class="fab fa-react"></i></div>
+                                <div class="orbit-icon orbit-6"><i class="uil uil-database"></i></div>
+                            </div>
+                        </div>
+                        <div class="glow-effect"></div>
                     </div>
                 </div>
 
             </div>
         </div>
     </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="skills py-5" id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-4">
+            <h2>Technical Skills</h2>
+            <p class="mb-0">Technologies and tools I work with</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="skill-category" onclick="toggleSkills(this)">
+              <h5>Cloud Platforms</h5>
+              <div class="skill-icons">
+                <i class="fab fa-aws" title="AWS"></i>
+                <i class="fab fa-google" title="Google Cloud"></i>
+                <i class="fab fa-microsoft" title="Azure"></i>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-item" data-delay="0">AWS (EC2, S3, VPC, IAM)</li>
+                <li class="skill-item" data-delay="200">Google Cloud Platform</li>
+                <li class="skill-item" data-delay="400">Azure</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="skill-category" onclick="toggleSkills(this)">
+              <h5>DevOps Tools</h5>
+              <div class="skill-icons">
+                <i class="fab fa-docker" title="Docker"></i>
+                <i class="uil uil-server" title="Kubernetes"></i>
+                <i class="uil uil-cog" title="Jenkins"></i>
+                <i class="uil uil-cube" title="Terraform"></i>
+                <i class="uil uil-setting" title="Ansible"></i>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-item" data-delay="0">Docker</li>
+                <li class="skill-item" data-delay="200">Kubernetes</li>
+                <li class="skill-item" data-delay="400">Jenkins</li>
+                <li class="skill-item" data-delay="600">Terraform</li>
+                <li class="skill-item" data-delay="800">Ansible</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="skill-category" onclick="toggleSkills(this)">
+              <h5>Programming</h5>
+              <div class="skill-icons">
+                <i class="fab fa-python" title="Python"></i>
+                <i class="fab fa-java" title="Java"></i>
+                <i class="uil uil-terminal" title="Bash/Shell"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-item" data-delay="0">Python</li>
+                <li class="skill-item" data-delay="200">Java</li>
+                <li class="skill-item" data-delay="400">Bash/Shell</li>
+                <li class="skill-item" data-delay="600">JavaScript</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="skill-category" onclick="toggleSkills(this)">
+              <h5>Monitoring</h5>
+              <div class="skill-icons">
+                <i class="uil uil-chart-line" title="Prometheus"></i>
+                <i class="uil uil-chart" title="Grafana"></i>
+                <i class="uil uil-search" title="ELK Stack"></i>
+                <i class="uil uil-eye" title="CloudWatch"></i>
+              </div>
+              <ul class="skill-list">
+                <li class="skill-item" data-delay="0">Prometheus</li>
+                <li class="skill-item" data-delay="200">Grafana</li>
+                <li class="skill-item" data-delay="400">ELK Stack</li>
+                <li class="skill-item" data-delay="600">CloudWatch</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+    function toggleSkills(element) {
+      const skillItems = element.querySelectorAll('.skill-item');
+      
+      if (element.classList.contains('active')) {
+        element.classList.remove('active');
+        skillItems.forEach(item => {
+          item.style.opacity = '0';
+          item.style.transform = 'translateX(-20px)';
+        });
+      } else {
+        element.classList.add('active');
+        skillItems.forEach((item, index) => {
+          const delay = parseInt(item.dataset.delay);
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateX(0)';
+          }, delay);
+        });
+      }
+    }
+    </script>
 
  <!-- PROJECTS -->
     <!-- CERTIFICATES -->
@@ -113,24 +258,56 @@ https://www.tooplate.com/view/2115-marvel
           <!-- Certificate 1 -->
           <div class="col-sm-6 col-md-4 mb-4">
             <div class="certificate-card text-center p-3 h-100" data-toggle="modal" data-target="#certModal1">
-              <img src="images/certificates/aws-cert.png" alt="AWS Certificate" class="img-fluid mb-3 certificate-img">
-              <h5 class="mb-0">AWS Certified Solutions Architect</h5>
+              <i class="fab fa-aws certificate-img mb-3"></i>
+              <h5 class="mb-0">AWS Certified Cloud Practitioner</h5>
             </div>
           </div>
 
           <!-- Certificate 2 -->
           <div class="col-sm-6 col-md-4 mb-4">
             <div class="certificate-card text-center p-3 h-100" data-toggle="modal" data-target="#certModal2">
-              <img src="images/certificates/docker-cert.png" alt="Docker Certificate" class="img-fluid mb-3 certificate-img">
-              <h5 class="mb-0">Docker Certified Associate</h5>
+              <i class="uil uil-robot certificate-img mb-3"></i>
+              <h5 class="mb-0">Oracle Certified Generative AI Professional</h5>
             </div>
           </div>
 
           <!-- Certificate 3 -->
           <div class="col-sm-6 col-md-4 mb-4">
             <div class="certificate-card text-center p-3 h-100" data-toggle="modal" data-target="#certModal3">
-              <img src="images/certificates/k8s-cert.png" alt="Kubernetes Certificate" class="img-fluid mb-3 certificate-img">
-              <h5 class="mb-0">Kubernetes Administrator</h5>
+              <i class="fab fa-python certificate-img mb-3"></i>
+              <h5 class="mb-0">Python (Simplilearn)</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="certificate-card text-center p-3 h-100" data-toggle="modal" data-target="#certModal4">
+              <i class="uil uil-database certificate-img mb-3"></i>
+              <h5 class="mb-0">Oracle Certified Foundations Associate</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 5 -->
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="certificate-card text-center p-3 h-100" data-toggle="modal" data-target="#certModal5">
+              <i class="uil uil-cog certificate-img mb-3"></i>
+              <h5 class="mb-0">DevOps Foundation</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 6 -->
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="certificate-card text-center p-3 h-100" data-toggle="modal" data-target="#certModal6">
+              <i class="fab fa-java certificate-img mb-3"></i>
+              <h5 class="mb-0">Core Java Training</h5>
+            </div>
+          </div>
+
+          <!-- Certificate 7 -->
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="certificate-card text-center p-3 h-100" data-toggle="modal" data-target="#certModal7">
+              <i class="uil uil-trophy certificate-img mb-3"></i>
+              <h5 class="mb-0">Additional Certifications</h5>
             </div>
           </div>
 
@@ -140,23 +317,22 @@ https://www.tooplate.com/view/2115-marvel
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="certModal1Label">AWS Certified Solutions Architect</h5>
+                  <h5 class="modal-title" id="certModal1Label">AWS Certified Cloud Practitioner</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <img src="images/certificates/aws-cert.png" alt="AWS Certificate" class="img-fluid mb-3">
-                  <p class="mb-3">AWS Certified Solutions Architect - Associate certification. Demonstrates knowledge of AWS services and best practices for building secure and reliable applications.</p>
+                  <p class="mb-3">AWS Certified Cloud Practitioner (CCP) certification validates foundational cloud knowledge and AWS services understanding.</p>
                   <ul class="certificate-details">
-                    <li>Issue Date: October 2025</li>
-                    <li>Certificate ID: AWS-123456</li>
-                    <li>Skills: EC2, S3, VPC, IAM, RDS</li>
+                    <li>Issue Date: April 29, 2025</li>
+                    <li>Certificate ID: dba3f7d52caf4793893b373f3c3f085d</li>
+                    <li>Skills: AWS Cloud fundamentals, Security, Pricing, Support</li>
                   </ul>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <a href="https://drive.google.com/your-aws-cert-link" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
+                  <a href="https://drive.google.com/file/d/1KkT7BD30pnylbpEH0KgvVH-8m1YcQMGk/view?usp=sharing" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
                 </div>
               </div>
             </div>
@@ -167,23 +343,20 @@ https://www.tooplate.com/view/2115-marvel
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="certModal2Label">Docker Certified Associate</h5>
+                  <h5 class="modal-title" id="certModal2Label">Oracle Certified Generative AI Professional</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <img src="images/certificates/docker-cert.png" alt="Docker Certificate" class="img-fluid mb-3">
-                  <p class="mb-3">Docker Certified Associate (DCA) certification. Validates expertise in Docker containerization and enterprise operations.</p>
+                  <p class="mb-3">Oracle Certified Generative AI Professional certification validates expertise in AI and machine learning technologies.</p>
                   <ul class="certificate-details">
-                    <li>Issue Date: September 2025</li>
-                    <li>Certificate ID: DCA-789012</li>
-                    <li>Skills: Docker, Container Orchestration, Networking</li>
+                    <li>Skills: Generative AI, Machine Learning, Oracle Cloud AI</li>
                   </ul>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <a href="https://drive.google.com/your-docker-cert-link" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
+                  <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7D6581A4C110A86C980652AA5E34863C8F497347811C57A4FB00FF2A80A32979" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
                 </div>
               </div>
             </div>
@@ -194,23 +367,119 @@ https://www.tooplate.com/view/2115-marvel
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="certModal3Label">Kubernetes Administrator</h5>
+                  <h5 class="modal-title" id="certModal3Label">Python (Simplilearn)</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <img src="images/certificates/k8s-cert.png" alt="Kubernetes Certificate" class="img-fluid mb-3">
-                  <p class="mb-3">Certified Kubernetes Administrator (CKA). Demonstrates proficiency in Kubernetes cluster operations and management.</p>
+                  <p class="mb-3">Python programming certification from Simplilearn covering core concepts and practical applications.</p>
                   <ul class="certificate-details">
-                    <li>Issue Date: August 2025</li>
-                    <li>Certificate ID: CKA-345678</li>
-                    <li>Skills: Kubernetes, Container Orchestration, Cloud Native</li>
+                    <li>Skills: Python programming, Data structures, OOP, Libraries</li>
                   </ul>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <a href="https://drive.google.com/your-k8s-cert-link" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
+                  <a href="https://drive.google.com/file/d/1O3FaFhOV4Cc0ivWNsCvUf3WcJsf1e1sX/view?usp=sharing" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 4 -->
+          <div class="modal fade" id="certModal4" tabindex="-1" role="dialog" aria-labelledby="certModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="certModal4Label">Oracle Certified Foundations Associate</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="mb-3">Oracle Certified Foundations Associate certification validates fundamental Oracle database and cloud concepts.</p>
+                  <ul class="certificate-details">
+                    <li>Skills: Oracle Database, SQL, Cloud fundamentals</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a href="https://drive.google.com/file/d/14yGilfIEMfoa0KXdRL9f0Wsct6DSwQNS/view?usp=sharing" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 5 -->
+          <div class="modal fade" id="certModal5" tabindex="-1" role="dialog" aria-labelledby="certModal5Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="certModal5Label">DevOps Foundation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="mb-3">DevOps Foundation certification covering fundamental DevOps principles and practices.</p>
+                  <ul class="certificate-details">
+                    <li>Skills: DevOps principles, CI/CD, Automation, Collaboration</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a href="https://drive.google.com/file/d/1m9sPcaiIw-JfviXoAwvPYa0pnxfCDLSR/view?usp=sharing" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 6 -->
+          <div class="modal fade" id="certModal6" tabindex="-1" role="dialog" aria-labelledby="certModal6Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="certModal6Label">Core Java Training</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="mb-3">Core Java Training certification from Internshala covering comprehensive Java programming concepts.</p>
+                  <ul class="certificate-details">
+                    <li>Duration: 8-week training program</li>
+                    <li>Skills: OOP, Database handling, GUI development, AI modules</li>
+                    <li>Provider: Internshala</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <a href="https://drive.google.com/file/d/1Bt59rRA56fHHL9Wo776VoonAzctD-Q5C/view?usp=sharing" target="_blank" class="btn custom-btn custom-btn-bg">View Certificate</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 7 -->
+          <div class="modal fade" id="certModal7" tabindex="-1" role="dialog" aria-labelledby="certModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="certModal7Label">Additional Certifications</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="mb-3">Additional professional certifications and achievements:</p>
+                  <ul class="certificate-details">
+                    <li>AWS Cloud Quest - Cloud Practitioner</li>
+                    <li>Google Generative AI Fundamentals</li>
+                    <li>Cisco Cybersecurity Essentials</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
@@ -223,66 +492,132 @@ https://www.tooplate.com/view/2115-marvel
 <section class="project py-5" id="project">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
+      <div class="col-lg-8 mx-auto text-center mb-4">
         <h2>Projects I've Built & Deployed</h2>
+        <p class="mb-0">Explore my latest projects and technical implementations</p>
       </div>
     </div>
 
     <div class="row mt-4">
-
       <!-- Project 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="project-info border rounded h-100 shadow-sm p-3">
-          <img src="images/project/project-image01.png" class="img-fluid mb-3 rounded" alt="Java Login Project">
-          <h5>Vprofile Login Page</h5>
-          <p>
-            Engineered and deployed a scalable Java-based login application using AWS services and EC2 instances. Configured ELB with NGINX for high availability and ASG for workload management.
-          </p>
-          <p><strong>Tech Stack:</strong> AWS, EC2, ELB, ASG, MySQL</p>
-          <a href="https://github.com/rahi-32/vprofile-login.git" target="_blank">🔗 GitHub Repository</a>
+
+            <div class="col-lg-6 col-md-6 mb-4">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img src="images\project\Screenshot 2025-11-03 223350.png" class="img-fluid" alt="Tic Tac Toe Game">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/rahi-32/genai-gov-platform.git" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Web Development</div>
+            <h5>AI-Powered Citizen Service Delivery System for Hackathon Submission</h5>
+            <p> AI-Powered Governance Platform — basically a smart government service system that uses AI to help governments serve citizens better and faster.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI (uvicorn)</span>
+              <span class="tech-tag">ML-Models</span>
+
+              <span class="tech-tag">Html, CSS, Js</span>
+              <span class="tech-tag">MySQLite</span>
+
+            </div>
+          </div>
         </div>
       </div>
-
       <!-- Project 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="project-info border rounded h-100 shadow-sm p-3">
-          <img src="images/project/project-image02.png" class="img-fluid mb-3 rounded" alt="Library Management System">
-          <h5>Library Management System</h5>
-          <p>
-            A desktop-based Java application to manage book issuance, returns, and member records. Includes user and admin login modules.
-          </p>
-          <p><strong>Tech Stack:</strong> Java, Swing, JDBC, MySQL</p>
-          <a href="https://github.com/rahi-32/library-management-system" target="_blank">🔗 GitHub Repository</a>
-        </div>
-      </div>
-
-
-
-            <div class="col-md-4 mb-4">
-        <div class="project-info border rounded h-100 shadow-sm p-3">
-          <img src="images\project\Screenshot 2025-10-23 014330.png" class="img-fluid mb-3 rounded" alt="Terraform IAC on AWS">
-          <h5>Web-server Using Terraform IAC</h5>
-          <p>
-            Successfully Deployed my portfolio Web Server Using Terraform on AWS ☁️
-          </p>
-          <p><strong>Tech Stack:</strong>Terraform, Aws Ec2, VS Code</p>
-          <a href="https://github.com/rahi-32/My-Portfolio-on-AWS-Cloud.git" target="_blank">🔗 GitHub Repository</a>
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img src="images\project\Screenshot 2025-11-02 000333.png" class="img-fluid" alt="Java Login Project">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/rahi-32/vprofile-login.git" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Cloud Application</div>
+            <h5>Vprofile Login Page</h5>
+            <p>Engineered and deployed a scalable Java-based login application using AWS services and EC2 instances. Configured ELB with NGINX for high availability.</p>
+            <div class="project-tech">
+              <span class="tech-tag">AWS</span>
+              <span class="tech-tag">EC2</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="project-info border rounded h-100 shadow-sm p-3">
-          <img src="images/project/project-image03.png" class="img-fluid mb-3 rounded" alt="Tic Tac Toe Game">
-          <h5>Tic Tac Toe Game</h5>
-          <p>
-            A fun two-player GUI game in Java that highlights winning combinations and tracks player turns interactively.
-          </p>
-          <p><strong>Tech Stack:</strong> Java, AWT/Swing</p>
-          <a href="https://github.com/rahi-32/tic-tac-toe-java" target="_blank">🔗 GitHub Repository</a>
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img src="images\project\What-Are-Distinctive-Features-of-a-Library-Management-System.jpg" class="img-fluid" alt="Library Management System">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/rahi-32/library-management-system" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Desktop Application</div>
+            <h5>Library Management System</h5>
+            <p>A desktop-based Java application to manage book issuance, returns, and member records with user and admin login modules.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Swing</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Project 4 -->
+      <div class="col-lg-6 col-md-6 mb-4">
+        <div class="project-card h-100">
+          <div class="project-image">
+            <img src="images/project/Screenshot 2025-10-23 014330.png" class="img-fluid" alt="Terraform IAC">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/rahi-32/My-Portfolio-on-AWS-Cloud.git" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="project-link">
+                  <i class="uil uil-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-category">Infrastructure as Code</div>
+            <h5>Web-server Using Terraform IAC</h5>
+            <p>Successfully deployed portfolio web server using Terraform Infrastructure as Code on AWS cloud platform.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Terraform</span>
+              <span class="tech-tag">AWS EC2</span>
+              <span class="tech-tag">IaC</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -294,84 +629,144 @@ https://www.tooplate.com/view/2115-marvel
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Experiences & Training</h2>
+                <div class="col-12">
+                  <h2 class="mb-4 text-center">Experiences & Training</h2>
 
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2025</span>
+                    <div class="experience-timeline">
+                        <div class="experience-item">
+                             <div class="experience-connector"></div>
+                             <div class="experience-icon">
+                                  <i class="fab fa-aws"></i>
                              </div>
-                             <div class="timeline-info">
-                                  <h3><span>AWS Cloud </span><small>Magic Bus India Foundation</small></h3>
-                                  <p>Completed a full-time, instructor-led training program focused on AWS Cloud fundamentals, gaining hands-on experience in cloud services, Linux, networking, security, and Python. Developed real-world solutions through scenario-based labs and projects while training under certified professionals in a collaborative cohort environment.</p>
+                             <div class="experience-content">
+                                  <div class="experience-year">Jan 2025 – Apr 2025</div>
+                                  <h4>AWS re/Start Program</h4>
+                                  <div class="experience-company">Magic Bus India Foundation</div>
+                                  <p>• Completed full-time, instructor-led training focused on AWS Cloud fundamentals.<br>
+                                  • Gained practical experience in cloud services, Linux, networking, security, and Python.<br>
+                                  • Developed real-world solutions through scenario-based labs and projects.</p>
+                                  <div class="experience-skills">
+                                    <span class="skill-badge">AWS</span>
+                                    <span class="skill-badge">Linux</span>
+                                    <span class="skill-badge">Python</span>
+                                    <span class="skill-badge">Networking</span>
+                                  </div>
+                                  <a href="https://www.credly.com/badges/b27be3cf-0817-4699-8125-80f4e7c15487/public_url" class="certificate-link">View Certificate</a>
                              </div>
                         </div>
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2025</span>
+                        <div class="experience-item">
+                            <div class="experience-connector"></div>
+                            <div class="experience-icon">
+                                <i class="fab fa-java"></i>
                             </div>
-                            <div class="timeline-info">
-                                <h3><span>Core Java Training</span><small>Internshala</small></h3>
-                                <p>Completed 8-week training covering OOP, DB handling, GUI and AI modules.</p>
+                            <div class="experience-content">
+                                <div class="experience-year">Jan 2025 - March 2025</div>
+                                <h4>Core Java Training (8 Weeks)</h4>
+                                <div class="experience-company">Internshala</div>
+                                <p>• Gained hands-on experience with Object-Oriented Programming (OOP), database handling (JDBC/SQL), GUI development, and basic AI modules.</p>
+                                <div class="experience-skills">
+                                  <span class="skill-badge">Java</span>
+                                  <span class="skill-badge">OOP</span>
+                                  <span class="skill-badge">JDBC/SQL</span>
+                                  <span class="skill-badge">GUI</span>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1Bt59rRA56fHHL9Wo776VoonAzctD-Q5C/view?usp=sharing" class="certificate-link" target="_blank">View Certificate</a>
                             </div>
                         </div>
 
-                        <!-- <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2016</span>
+                        <div class="experience-item">
+                            <div class="experience-connector"></div>
+                            <div class="experience-icon">
+                                <i class="fab fa-google"></i>
                             </div>
-                            <div class="timeline-info">
-                                <h3><span>UI Freelancer</h3>
-                                <p>Sed fringilla vitae enim sit amet cursus. Sed cursus dictum tortor quis pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                            <div class="experience-content">
+                                <div class="experience-year">Aug 2025 - Oct 2025</div>
+                                <h4>Google Cloud Arcade Facilitator Program (Cohort 2)</h4>
+                                <div class="experience-company">Google Cloud</div>
+                                <p>• Attained Ultimate Milestone by completing 100+ challenges.<br>
+                                • Earned official Certificate of Appreciation from Google.<br>
+                                • Successfully completed 12 Arcade Games, 8 Trivia Quizzes, 52 Skill Badges, and 24 Lab-free Courses, validating expertise across core Google Cloud services.</p>
+                                <div class="experience-skills">
+                                  <span class="skill-badge">Google Cloud</span>
+                                  <span class="skill-badge">Cloud Computing</span>
+                                  <span class="skill-badge">Skill Badges</span>
+                                </div>
+                                <a href="#" class="certificate-link">View Certificate</a>
                             </div>
-                        </div> -->
-                        
-                        <!-- <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2014</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Junior Designer<small>Crafted Co.</small></h3>
-                                <p>Cras scelerisque scelerisque condimentum. Nullam at volutpat mi. Nunc auctor ipsum eget magna consequat viverra.</p>
-                            </div>
-                        </div> -->
-
+                        </div>
                     </div>
                 </div>
+                
+            </div>
+        </div>
+    </section>
 
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
+    <!-- EDUCATION SECTION -->
+    <section class="education py-5" id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                  <h2 class="mb-4 text-center">Education</h2>
 
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2024</span>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                             <div class="education-connector"></div>
+                             <div class="education-icon">
+                                  <i class="uil uil-graduation-cap"></i>
                              </div>
-                             <div class="timeline-info">
-                                  <h3><span>Computer Science Engineering</span><small>Jamia Hamdard, New Delhi</small></h3>
-                                  <p>Pursuing Bachelor's in Computer Science Engineering with focus on cloud computing and DevOps technologies.</p>
+                             <div class="education-content">
+                                  <div class="education-year">2021 - Present</div>
+                                  <h4>Bachelor of Technology - Computer Science Engineering</h4>
+                                  <div class="education-company">Jamia Hamdard, New Delhi</div>
+                                  <p>• Pursuing Bachelor's in Computer Science Engineering with focus on cloud computing and DevOps technologies.<br>
+                                  • Specialized coursework in Data Structures, Algorithms, Database Management, and Software Engineering.</p>
+                                  <div class="education-skills">
+                                    <span class="skill-badge">Cloud Computing</span>
+                                    <span class="skill-badge">DevOps</span>
+                                    <span class="skill-badge">Data Structures</span>
+                                    <span class="skill-badge">Algorithms</span>
+                                  </div>
                              </div>
                         </div>
 
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2019</span>
+                        <div class="education-item">
+                            <div class="education-connector"></div>
+                            <div class="education-icon">
+                                <i class="uil uil-book-alt"></i>
                             </div>
-                            <div class="timeline-info">
-                                <h3><span>12th Bihar School Examination Board</span><small>S.N.S.Y College, Rambagh Prunia</small></h3>
-                                <p>Completed senior secondary education with focus on Science and Mathematics.</p>
+                            <div class="education-content">
+                                <div class="education-year">2019</div>
+                                <h4>Senior Secondary Education (12th)</h4>
+                                <div class="education-company">Bihar School Examination Board</div>
+                                <p>• Completed senior secondary education with focus on Science and Mathematics.<br>
+                                • Strong foundation in Physics, Chemistry, Mathematics, and Computer Science.</p>
+                                <div class="education-skills">
+                                  <span class="skill-badge">Physics</span>
+                                  <span class="skill-badge">Chemistry</span>
+                                  <span class="skill-badge">Mathematics</span>
+                                  <span class="skill-badge">Computer Science</span>
+                                </div>
                             </div>
                         </div>
                         
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2017</span>
+                        <div class="education-item">
+                            <div class="education-connector"></div>
+                            <div class="education-icon">
+                                <i class="uil uil-books"></i>
                             </div>
-                            <div class="timeline-info">
-                                <h3><span>10th Bihar School Examination Board</span><small>Zila School Purnia</small></h3>
-                                <p>Completed secondary education with distinction in Science and Mathematics.</p>
+                            <div class="education-content">
+                                <div class="education-year">2017</div>
+                                <h4>Secondary Education (10th)</h4>
+                                <div class="education-company">Bihar School Examination Board</div>
+                                <p>• Completed secondary education with distinction in Science and Mathematics.<br>
+                                • Achieved excellent academic performance with strong analytical and problem-solving skills.</p>
+                                <div class="education-skills">
+                                  <span class="skill-badge">Science</span>
+                                  <span class="skill-badge">Mathematics</span>
+                                  <span class="skill-badge">English</span>
+                                  <span class="skill-badge">Social Studies</span>
+                                </div>
                             </div>
                         </div>
 
@@ -387,47 +782,100 @@ https://www.tooplate.com/view/2115-marvel
       <div class="container">
         <div class="row">
           
-          <!-- <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="google-map w-100">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12088.558402180099!2d-73.99373482142036!3d40.75895421922642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855b8fb3083%3A0xa0f9aef176042a5c!2sTheater+District%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2smm!4v1549875377188" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-
-            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                <div class="contact-info-item">
-                  <h3 class="mb-3 text-white">Linkedin.com</h3>
-                  <p class="footer-text mb-0">Gihub.com</p>
-                  <p><a href="mailto:hello@company.co">Youtube</a></p>
+          <div class="col-lg-6 col-12 mb-4">
+            <div class="contact-info-card">
+              <div class="contact-header">
+                <div class="contact-icon">
+                  <i class="uil uil-envelope"></i>
                 </div>
-
-                <ul class="social-links">
-                     <li><a href="https://www.linkedin.com/in/danish-ahmad-2ba697249/" class="uil uil-linkedin" data-toggle="tooltip" data-placement="left" title="LinkedIn"></a></li>
-                     <li><a href="https://github.com/rahi-32" class="uil uil-github" data-toggle="tooltip" data-placement="left" title="GitHub"></a></li>
-                     <li><a href="#" class="uil uil-envelope" data-toggle="tooltip" data-placement="left" title="Email"></a></li>
-                </ul>
+                <h3>Let's Connect</h3>
+                <p>Ready to collaborate on your next project? I'd love to hear from you!</p>
+              </div>
+              
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="uil uil-envelope"></i>
+                  </div>
+                  <div class="contact-item-content">
+                    <h5>Email</h5>
+                    <p>danishahamad.mail78@gmail.com</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="uil uil-map-marker"></i>
+                  </div>
+                  <div class="contact-item-content">
+                    <h5>Location</h5>
+                    <p>New Delhi, India</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-item-icon">
+                    <i class="uil uil-clock"></i>
+                  </div>
+                  <div class="contact-item-content">
+                    <h5>Response Time</h5>
+                    <p>Within 24 hours</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="social-connect">
+                <h5>Follow Me</h5>
+                <div class="social-links-modern">
+                  <a href="https://www.linkedin.com/in/danish-ahmad-2ba697249/" class="social-link linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com/rahi-32" class="social-link github" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="mailto:danishahamad.mail78@gmail.com" class="social-link email">
+                    <i class="uil uil-envelope"></i>
+                  </a>
+                  
+                </div>
+              </div>
             </div>
-          </div> -->
+          </div>
 
           <div class="col-lg-6 col-12">
-            <div class="contact-form">
-              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+            <div class="contact-form-card">
+              <div class="form-header">
+                <h2>Interested to work together? Let's talk</h2>
+                <p>Send me a message and I'll get back to you as soon as possible!</p>
+              </div>
 
               <form id="contact-form">
-                <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="user_name" placeholder="Your Name" id="name">
+                <div class="form-group">
+                  <div class="input-wrapper">
+                    <i class="uil uil-user input-icon"></i>
+                    <input type="text" class="form-control modern-input" name="user_name" placeholder="Your Name" id="name" required>
                   </div>
+                </div>
 
-                  <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="user_email" placeholder="Email" id="email">
+                <div class="form-group">
+                  <div class="input-wrapper">
+                    <i class="uil uil-envelope input-icon"></i>
+                    <input type="email" class="form-control modern-input" name="user_email" placeholder="Your Email" id="email" required>
                   </div>
+                </div>
 
-                  <div class="col-12">
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
+                <div class="form-group">
+                  <div class="input-wrapper">
+                    <i class="uil uil-message input-icon message-icon"></i>
+                    <textarea name="message" rows="6" class="form-control modern-input" id="message" placeholder="Tell me about your project..." required></textarea>
                   </div>
+                </div>
 
-                  <div class="ml-lg-auto col-lg-5 col-12">
-                    <input type="submit" class="form-control submit-btn" value="Send Button">
-                  </div>
+                <div class="form-group">
+                  <button type="submit" class="modern-submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <i class="uil uil-message btn-icon"></i>
+                  </button>
                 </div>
               </form>
             </div>
